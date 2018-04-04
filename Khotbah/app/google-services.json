@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "734442698795",
+    "firebase_url": "https://khotbah-498c3.firebaseio.com",
+    "project_id": "khotbah-498c3",
+    "storage_bucket": "khotbah-498c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734442698795:android:87b18e9d719b2175",
+        "android_client_info": {
+          "package_name": "com.kun.jun.khotbahapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734442698795-4kararr3ev0acqhce80kcofvtchdhlp8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kun.jun.khotbahapp",
+            "certificate_hash": "642cb1aa7c3a4a359942d604500c2e4b55c671c9"
+          }
+        },
+        {
+          "client_id": "734442698795-bc2snkv12f50s3ugarar4e4a223mceah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-SYSMj_SgaDzK_gpuzfb5VdGwYnhdhqg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734442698795-bc2snkv12f50s3ugarar4e4a223mceah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
