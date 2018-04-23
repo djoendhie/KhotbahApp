@@ -65,6 +65,36 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyHold
         holder.email.setText(list.get(position).getInfo());
         PicassoClient.downloading(context,list.get(position).getUrl(),holder.addresse);
 
+        holder.addresse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Dialog dialog = new Dialog(context);
+                dialog.setTitle("Khotbah");
+
+                //final Dialog dialog = new Dialog(c);
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                View x = inflater.inflate(R.layout.activity_card, null);
+                dialog.setContentView(x);
+
+                final TextView nameEditext = (TextView) dialog.findViewById(R.id.nameEditText);
+                final ImageView urlEditext = (ImageView) dialog.findViewById(R.id.urlEditText);
+                final TextView infoEditext = (TextView) dialog.findViewById(R.id.infoEditText);
+
+                final String name = list.get(position).getName();
+                final String info = list.get(position).getInfo();
+//                final String url = hewanArrqayList.get(position).getUrl();
+
+                final String id = list.get(position).getId_hewan();
+
+                nameEditext.setText(name);
+                PicassoClient.downloading(context,list.get(position).getUrl(),holder.addresse = urlEditext);
+//                urlEditext.setImageURI(c, hewanArrayList.get(position).getUrl(), holder.img = url);
+                infoEditext.setText(info);
+
+                dialog.show();
+            }
+        });
         holder.email.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

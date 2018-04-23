@@ -22,10 +22,6 @@ public class OthFragment extends Fragment {
     @BindView(R.id.tn)
     TextView tn;
     Unbinder unbinder;
-    @BindView(R.id.imn1)
-    ImageView imn1;
-    @BindView(R.id.tn1)
-    TextView tn1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -54,23 +50,4 @@ public class OthFragment extends Fragment {
         startActivity(intent);
     }
 
-    @OnClick({R.id.imn1, R.id.tn1})
-    public void onViewClicked(View view) {
-        switch (view.getId()) {
-            case R.id.imn1:
-                Intent smsIntent = new Intent(Intent.ACTION_VIEW);
-                smsIntent.setType("vnd.android-dir/mms-sms");
-                smsIntent.putExtra("address", "12125551212");
-                smsIntent.putExtra("sms_body","Body of Message");
-                startActivity(smsIntent);
-                break;
-            case R.id.tn1:
-                Intent smsIntent1 = new Intent(Intent.ACTION_VIEW);
-                smsIntent1.setType("vnd.android-dir/mms-sms");
-                smsIntent1.putExtra("address", "12125551212");
-                smsIntent1.putExtra("sms_body","Body of Message");
-                startActivity(smsIntent1);
-                break;
-        }
-    }
 }
